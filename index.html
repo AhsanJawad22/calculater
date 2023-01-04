@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   <h2 class="heading">math calculater</h2> 
+<form class="form" onsubmit="calculate();return false;">
+
+<label for="totalMarks">Total Marks</label>
+
+<input class="input" type="number" min = "1" required id="totalMarks" placeholder="Enter total marks">
+
+
+
+<label for="marksObtained">Marks Obtained</label>
+
+<input class="input" type="number" min = "1" required id="marksObtained" placeholder="Enter your marks">
+<br>
+
+<button class="button" type="submit">calculate</button>
+</form>
+
+
+<h1 id="result"></h1>
+
+<script>
+
+    function calculate() {
+
+        let totalMarks = document.querySelector("#totalMarks").value;
+        let marksObtained = document.querySelector("#marksObtained").value;
+
+        totalMarks = Number(totalMarks)
+        marksObtained = Number(marksObtained)
+
+
+        let result = marksObtained * 100 / totalMarks;
+
+
+        document.querySelector("#result").innerHTML =`you have got ${result}`;
+    }
+</script>
+</body>
+</html>

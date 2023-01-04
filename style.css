@@ -1,0 +1,22 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url("./wp.webp");
+}
+.heading{
+    margin-left: 545px;
+    font-size: xx-large;
+}
+.form{
+    margin-left: 545px;
+}
+.inport{
+    margin-left: 545px;
+    border-radius: 30px;
+}
+.button{
+    height: 40px;
+    width: 120px;
+    border-radius: 45px;
+    font-size: x-large;
+}
